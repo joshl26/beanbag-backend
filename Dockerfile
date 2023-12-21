@@ -2,19 +2,19 @@
 FROM node:18-alpine
 
 # Set the working directory
-WORKDIR /app/backend
+WORKDIR /
 
 # Copy the necessary files
 COPY package.json .
 COPY develop.sh .
 COPY yarn.* .
-COPY seed.json .
+# COPY /data/seed.json .
 
 # Run the apk update command to update package information
 RUN apk update
 
 # Install dependencies
-RUN yarn --network-timeout 100000
+RUN yarn --ignore-platform
 
 # Install the medusa-cli
 RUN yarn global add @medusajs/medusa-cli@latest

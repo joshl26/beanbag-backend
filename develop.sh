@@ -1,6 +1,6 @@
-#!/bin/bash
+#!//bin//bash
 
-medusa seed -f ./seed.json
+# medusa seed -f ./seed.json
 
 medusa migrations run
 
