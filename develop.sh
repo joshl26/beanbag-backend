@@ -4,7 +4,7 @@
 
 medusa migrations run
 
-medusa user -e some@email.com -p some-password
+# medusa user -e some@email.com -p some-password
 
 
 #Start development environment

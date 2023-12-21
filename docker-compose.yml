@@ -14,6 +14,7 @@ services:
       - backend_node_modules:/app/node_modules
     ports:
       - "9000:9000"
+      - "7001:7001"
     environment:
       NODE_ENV: development
       DATABASE_URL: postgres://beanbag_user:TUjGFbMq9ks6@148.113.181.200:5432/beanbag_medusa_db
