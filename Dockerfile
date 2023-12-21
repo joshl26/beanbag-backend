@@ -14,7 +14,7 @@ COPY yarn.* .
 RUN apk update
 
 # Install dependencies
-RUN yarn --ignore-platform
+RUN yarn --network-timeout 100000
 
 # Install the medusa-cli
 RUN yarn global add @medusajs/medusa-cli@latest
