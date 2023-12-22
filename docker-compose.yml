@@ -19,7 +19,9 @@ services:
       NODE_ENV: development
       DATABASE_URL: postgres://beanbag_user:TUjGFbMq9ks6@148.113.181.200:5432/beanbag_medusa_db
       REDIS_URL: redis://cache
-    
+      VIRTUAL_HOST: 148.113.181.200/beanbag-backend, 148.113.181.200/beanbag-backend/admin
+      VIRTUAL_PORT: 9000, 7001 
+
   redis:
     image: redis:7.0.7-alpine
     restart: always
