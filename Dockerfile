@@ -6,7 +6,7 @@ WORKDIR /
 
 # Copy the necessary files
 COPY package.json .
-COPY develop.sh .
+#COPY develop.sh .
 COPY yarn.* .
 # COPY /data/seed.json .
 
