@@ -22,7 +22,7 @@ RUN yarn global add @medusajs/medusa-cli@latest
 # Add the remaining files
 COPY . .
 
-COPY --chmod=777 develop.sh /usr/local/bin/develop.sh
+#COPY --chmod=777 develop.sh /usr/local/bin/develop.sh
 
 CMD ["npm", "run", "start"]
 #CMD ["npm", "run", "dev"]
