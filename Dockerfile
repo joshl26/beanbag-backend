@@ -25,6 +25,8 @@ COPY . .
 COPY --chmod=777 develop.sh /usr/local/bin/develop.sh
 
 CMD ["npm", "run", "start"]
+#CMD ["npm", "run", "dev"]
+
 
 # Set the default command to run when the container starts
-ENTRYPOINT ["sh", "develop.sh"]
+# ENTRYPOINT ["sh", "develop.sh"]
