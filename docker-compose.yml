@@ -13,15 +13,15 @@ services:
       - ./backend:/app
       - backend_node_modules:/app/node_modules
     ports:
-      #- "9000:9000"
+      - "9000:9000"
       - "7001:7001"
     environment:
       NODE_ENV: production
       DATABASE_URL: postgres://beanbag_user:TUjGFbMq9ks6@148.113.181.200:5432/beanbag_medusa_db
       REDIS_URL: redis://cache
-      VIRTUAL_HOST: blackrockdesign.store, www.blackrockdesign.store
+      VIRTUAL_HOST: blackrockdesign.store,www.blackrockdesign.store
       VIRTUAL_PATH: /
-  
+      VIRTUAL_PORT: 7001
 
   redis:
     image: redis:7.0.7-alpine
